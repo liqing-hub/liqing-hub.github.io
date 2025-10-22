@@ -1,10 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>My First Web Page</title>
+    <title>我的GitHub Pages网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "微软雅黑", "Helvetica Neue", sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        .navbar a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #2980b9;
+        }
+        .navbar a:first-child {
+            margin-left: 0;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin: 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        /* 内容区域样式 */
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+        p {
+            margin-bottom: 20px;
+            text-indent: 2em;
+        }
+
+        /* 图片样式 */
+        .feature-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .feature-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 功能列表样式 */
+        .features {
+            margin: 30px 0;
+            padding-left: 2em;
+        }
+        .features li {
+            margin-bottom: 25px;
+        }
+        .features strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        /* 按钮样式 */
+        .action-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        .action-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>这是通过GitHub Pages发布的页面。</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="#">首页</a>
+        <a href="about.html">关于我们</a>
+        <a href="projects.html">项目展示</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
+
+    <!-- 标题 -->
+    <h1>Hello, GitHub Pages!</h1>
+
+    <!-- 主要内容 -->
+    <div class="content">
+        <p>这是一个通过GitHub Pages搭建的静态网页，无需配置复杂的服务器，只需简单的HTML和CSS代码，就能实现一个美观且可交互的页面。</p>
+        
+        <!-- 交互图片 -->
+        <img 
+            src="https://picsum.photos/800/500" 
+            alt="示例风景图片" 
+            class="feature-img"
+        >
+        
+        <p>你可以轻松扩展这个页面的功能，以下是一些常见的扩展方向：</p>
+        
+        <!-- 功能列表 -->
+        <ul class="features">
+            <li>
+                <strong>多页面导航</strong>：上方导航栏已实现基础跳转功能，只需创建对应的HTML文件（如about.html），即可实现多页面联动。
+            </li>
+            <li>
+                <strong>交互按钮</strong>：点击下方按钮体验简单的交互效果（基于JavaScript）：<br>
+                <button class="action-btn" onclick="alert('🎉 你点击了按钮！这是一个简单的JS交互示例')">点击我试试</button>
+            </li>
+            <li>
+                <strong>响应式设计</strong>：页面会自动适配手机、平板等设备，在不同屏幕尺寸下保持良好的显示效果。
+            </li>
+            <li>
+                <strong>样式自定义</strong>：通过修改CSS代码，可以轻松更换颜色、字体和布局，打造个性化页面。
+            </li>
+        </ul>
+        
+        <p>所有这些功能都无需担心服务器维护，GitHub Pages会自动帮你托管和发布，访问地址为：<code>https://你的用户名.github.io</code>。</p>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 我的GitHub Pages实验页面 | 用静态网页展示无限可能</p>
+    </footer>
 </body>
 </html>
